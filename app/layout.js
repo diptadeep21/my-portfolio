@@ -16,7 +16,7 @@ const poppins = Poppins({
 export const metadata = {
   title: "Portfolio of Diptadeep Sarkar - Software Developer",
   description:
-    "This is the portfolio of Diptadeep Sarkar. I am a Software Developer, MERN Stack Developer, and Flutter Enthusiast. I am currently pursuing my B.Tech in Computer Engineering at VIIT Pune. I love to learn new technologies and am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    "Portfolio of Diptadeep Sarkar - Software Developer & MERN Stack Developer. Currently pursuing B.Tech in Computer Engineering at VIIT Pune. Passionate about building innovative web applications and solving complex problems.",
   icons: {
     icon: "/profile.png",
     shortcut: "/profile.png",
