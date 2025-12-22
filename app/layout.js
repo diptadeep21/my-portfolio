@@ -18,9 +18,9 @@ export const metadata = {
   description:
     "Portfolio of Diptadeep Sarkar - Software Developer & MERN Stack Developer. Currently pursuing B.Tech in Computer Engineering at VIIT Pune. Passionate about building innovative web applications and solving complex problems.",
   icons: {
-    icon: "/profile.png",
-    shortcut: "/profile.png",
-    apple: "/profile.png",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 };
 

@@ -2,14 +2,16 @@ import axios from 'axios';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-// Create Nodemailer transporter (Gmail recommended with App Password)
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_ADDRESS,
-    pass: process.env.GMAIL_PASSKEY, // **Use an App Password** if using Gmail + 2FA
-  },
-});
+// Create transporter lazily with env checks
+function createTransporter() {
+  const user = process.env.EMAIL_ADDRESS;
+  const pass = process.env.GMAIL_PASSKEY;
+  if (!user || !pass) return null;
+  return nodemailer.createTransport({
+    service: 'gmail',
+    auth: { user, pass },
+  });
+}
 
 // Optional: verify transporter once (useful during dev)
 async function verifyTransporter() {
@@ -20,7 +22,6 @@ async function verifyTransporter() {
     console.error('Nodemailer verification failed:', err);
   }
 }
-verifyTransporter();
 
 // Helper: escape HTML for safe insertion into email html
 function escapeHtml(str = '') {
@@ -73,6 +74,10 @@ async function sendEmail(payload) {
     replyTo: email,
   };
 
+  const transporter = createTransporter();
+  if (!transporter) {
+    return false;
+  }
   try {
     const info = await transporter.sendMail(mailOptions);
     console.log('Email sent:', info.messageId);

@@ -1,5 +1,5 @@
 export function isValidEmail(email) {
-  // Regular expression for validating email addresses
+  // Relaxed email validation to accept any standard email format
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 };

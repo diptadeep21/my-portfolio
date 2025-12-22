@@ -5,7 +5,7 @@ import { personalData } from "@/utils/data/personal-data";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { MdDownload, MdEmail } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
@@ -93,6 +93,15 @@ function HeroSection() {
             >
               <MdEmail size={30} />
             </Link>
+            {personalData.whatsapp && (
+              <Link
+                href={personalData.whatsapp}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <BsWhatsapp size={30} />
+              </Link>
+            )}
             <Link
               href={`tel:${personalData.phone.replace(/\s/g, '')}`}
               target='_blank'
