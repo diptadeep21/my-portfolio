@@ -13,6 +13,6 @@ export const personalData = {
   stackOverflow: '',
   leetcode: "https://leetcode.com/u/diptadeep21/",
   devUsername: "diptadeep21",
-  resume: "https://drive.google.com/file/d/1a3d18zecw38jxW6i9b08DjqczWSsvg6r/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1tc8reqAzJTKHSjCKXq2DSYFDDP83euFP/view?usp=sharing",
   whatsapp: 'https://wa.me/919970140241',
 }
