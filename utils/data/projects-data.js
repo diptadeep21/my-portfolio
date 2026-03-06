@@ -7,6 +7,7 @@ export const projectsData = [
         role: 'Full Stack Developer',
         code: 'https://github.com/diptadeep21/quizify-AI',
         demo: 'https://quizify-ai-ten.vercel.app/',
+        image: { src: '/png/aiquizbuilder.png' },
     },
     {
         id: 5,
@@ -16,6 +17,7 @@ export const projectsData = [
         role: 'Full Stack Developer',
         code: 'https://github.com/diptadeep21/cc-agrocast',
         demo: 'https://cc-agrocast-phr9.vercel.app/',
+        image: { src: '/png/agrocast.png' },
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ export const projectsData = [
         code: '',
         role: 'Full Stack Developer',
         demo: '',
+        image: { src: '/png/placeholder.png' },
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ export const projectsData = [
         code: '',
         demo: '',
         role: 'Full Stack Developer',
+        image: { src: '/png/wanderlust.png' },
     },
     {
         id: 2,
@@ -43,6 +47,7 @@ export const projectsData = [
         code: '',
         demo: '',
         role: 'Full Stack Developer',
+        image: { src: '/png/deepsfusion.png' },
     }
 ];
 
